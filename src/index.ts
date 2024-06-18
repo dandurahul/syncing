@@ -12,7 +12,6 @@ app.post("/syncingresult", (req: Request, res: Response) => {
       throw new Error("Request body is empty");
     }
 
-    console.log("hitting this");
 
     let calculatingData: any = req.body;
     let invoiceDetails: any[] = calculatingData.invoiceDetails;
